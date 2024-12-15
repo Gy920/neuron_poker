@@ -103,7 +103,7 @@ class SelfPlay:
         """Create an environment with 6 random players"""
         from agents.agent_random import Player as RandomPlayer
         env_name = 'neuron_poker-v0'
-        num_of_plrs = 2
+        num_of_plrs = 6
         self.env = gym.make(env_name, initial_stacks=self.stack, render=self.render)
         for _ in range(num_of_plrs):
             player = RandomPlayer()
